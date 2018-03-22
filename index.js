@@ -35,22 +35,22 @@ function changeBG(){
 
 function moveBG(keyCode){
     if (keyCode == 40){
-            posTop -= 10
-            background.style.backgroundPosition = posLeft+"px "+posTop+"px"
-    }
-    
-    if (keyCode == 38){
             posTop += 10
             background.style.backgroundPosition = posLeft+"px "+posTop+"px"
     }
     
+    if (keyCode == 38){
+            posTop -= 10
+            background.style.backgroundPosition = posLeft+"px "+posTop+"px"
+    }
+    
     if (keyCode == 37){
-            posLeft += 10
+            posLeft -= 10
             background.style.backgroundPosition = posLeft+"px "+posTop+"px"
     }
     
     if (keyCode == 39){
-            posLeft -= 10
+            posLeft += 10
             background.style.backgroundPosition = posLeft+"px "+posTop+"px"
     }
     
